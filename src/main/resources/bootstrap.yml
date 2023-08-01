@@ -1,6 +1,6 @@
 spring:
   application:
-    name: homework3-service
+    name: dz3-service
   cloud:
     kubernetes:
       config:
