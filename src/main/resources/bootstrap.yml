@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: homework3-service
+  cloud:
+    kubernetes:
+      config:
+        enabled: true
