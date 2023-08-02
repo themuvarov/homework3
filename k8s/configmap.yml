@@ -5,7 +5,7 @@ metadata:
 data:
   application.properties: |-
     server.port=8000
-    spring.datasource.url=jdbc:postgresql://postgres:5432/users
+    spring.datasource.url=jdbc:postgresql://v1-postgresql:5432/users
     spring.datasource.username=${PG_USERNAME}
     spring.datasource.password=${PG_PASSWORD}
     spring.jpa.show-sql=true
