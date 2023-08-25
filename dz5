@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net" modified="2023-08-25T19:22:00.117Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="FII4LDQVg7X1GpQFVKHu" version="21.6.9" type="device">
+  <diagram name="Страница — 1" id="gG4RYn6SAxN7yQyQpL_F">
+    <mxGraphModel dx="2831" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kaDalytalYxrnvUqjmQC-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-6" target="kaDalytalYxrnvUqjmQC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-6" value="ingress" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=ing" vertex="1" parent="1">
+          <mxGeometry x="-120" y="360" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.1;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-7" target="kaDalytalYxrnvUqjmQC-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-7" value="app pod1" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=pod" vertex="1" parent="1">
+          <mxGeometry x="110" y="190" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-8" value="volume" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=pv" vertex="1" parent="1">
+          <mxGeometry x="530" y="370" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-9" target="kaDalytalYxrnvUqjmQC-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-9" value="secrets" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=secret" vertex="1" parent="1">
+          <mxGeometry x="210" y="418" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-10" target="kaDalytalYxrnvUqjmQC-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="384" />
+              <mxPoint x="70" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-10" target="kaDalytalYxrnvUqjmQC-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-10" value="app srv" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=svc" vertex="1" parent="1">
+          <mxGeometry x="-10" y="360" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.28;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-12" target="kaDalytalYxrnvUqjmQC-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-12" value="app pod2" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=pod" vertex="1" parent="1">
+          <mxGeometry x="90" y="510" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-30" target="kaDalytalYxrnvUqjmQC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-13" value="Postgresql svc" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=svc" vertex="1" parent="1">
+          <mxGeometry x="290" y="370" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.995;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-14" target="kaDalytalYxrnvUqjmQC-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-14" value="configmap" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=cm" vertex="1" parent="1">
+          <mxGeometry x="210" y="290" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-25" target="kaDalytalYxrnvUqjmQC-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-25" target="kaDalytalYxrnvUqjmQC-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="384" />
+              <mxPoint x="120" y="459" />
+              <mxPoint x="115" y="459" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-25" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=deploy" vertex="1" parent="1">
+          <mxGeometry x="130" y="360" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kaDalytalYxrnvUqjmQC-13" target="kaDalytalYxrnvUqjmQC-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="394" as="sourcePoint" />
+            <mxPoint x="530" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-30" value="Postgresql POD" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=pod" vertex="1" parent="1">
+          <mxGeometry x="410" y="370" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kaDalytalYxrnvUqjmQC-32" value="&lt;h1&gt;Решение&lt;/h1&gt;&lt;p&gt;1 В качестве метода аутентификации Basic Auth&lt;/p&gt;&lt;p&gt;2 Метод регистрации не требует аутентификации&lt;/p&gt;&lt;p&gt;3 Методы получение и изменение профиля только авторизованным пользователем из контекста сессии&amp;nbsp;&lt;/p&gt;&lt;p&gt;4 Пароли хранятся в БД в виде хеша&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="148" width="300" height="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
