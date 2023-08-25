@@ -21,5 +21,5 @@ minikube kubectl -- apply -f .
 minikube kubectl -- get pod
 
 6 Запустить Postman с коллекцией из проекта (в аттаче тоже есть)
-newman run ./dz3.postman_collection.json
+newman run ./dz5.postman_collection.json
 
