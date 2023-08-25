@@ -13,10 +13,14 @@ spec:
     metadata:
       labels:
         app: dz3
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/actuator/prometheus"
     spec:
       containers:
       - name: dz3
-        image: dubec/home_works:dz3_v05
+        image: dubec/home_works:dz5_v11
         ports:
         - containerPort: 8000
         readinessProbe:
@@ -54,6 +58,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /health/
 spec:
+  ingressClassName: nginx
   rules:
     - host: arch.homework
       http:
@@ -81,6 +86,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
+  ingressClassName: nginx
   rules:
     - host: arch.homework
       http:

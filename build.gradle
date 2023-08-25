@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'm.uvarov'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.11-SNAPSHOT'
 
 java {
 	sourceCompatibility = '17'
@@ -25,6 +25,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes-client-config'
+	implementation 'io.micrometer:micrometer-registry-prometheus'
+	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
 
 	compileOnly 'org.projectlombok:lombok:1.18.26'
 	annotationProcessor 'org.projectlombok:lombok:1.18.26'
