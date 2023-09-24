@@ -2,6 +2,7 @@ package m.uvarov.homework1;
 
 import io.micrometer.core.annotation.Timed;
 import lombok.RequiredArgsConstructor;
+import m.uvarov.homework1.model.Order;
 import m.uvarov.homework1.model.User;
 import m.uvarov.homework1.repository.UserRepository;
 import org.springframework.beans.BeanUtils;
@@ -15,6 +16,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static org.springframework.http.HttpStatus.CONFLICT;
+
 @RestController
 @RequiredArgsConstructor
 public class DockerMessageController {
@@ -22,6 +25,8 @@ public class DockerMessageController {
     private final UserRepository userRepository;
 
     private final UserServiceImpl userService;
+
+    private final OrderServiceImpl orderService;
 
     @Timed
     @GetMapping("/health/")
@@ -102,4 +107,16 @@ public class DockerMessageController {
         final User updatedUser = userRepository.save(user);
         return ResponseEntity.ok(updatedUser);
     }
+
+
+    @PostMapping(value = "/orders", consumes = {"application/json"})
+    public ResponseEntity<Order> createOrder(@RequestBody Order order, @RequestHeader("X-Request-Id") String requestId) {
+        Order created = orderService.create(order, requestId);
+        if (created == null) {
+            return new ResponseEntity<>(CONFLICT);
+        }
+
+        return ResponseEntity.ok(created);
+    }
+
 }

@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: dz3
-        image: dubec/home_works:dz5_v11
+        image: dubec/home_works:dz6_v02
         ports:
         - containerPort: 8000
         readinessProbe:
@@ -98,5 +98,23 @@ spec:
                 name: dz3-service
                 port:
                   number: 8000
-
 ---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dz3-orders-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: arch.homework
+      http:
+        paths:
+          - pathType: Prefix
+            path: /orders(/|$)(.*)
+            backend:
+              service:
+                name: dz3-service
+                port:
+                  number: 8000

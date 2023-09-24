@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "ca5fde82-de7a-4838-a944-2b9f56d4e50b",
+		"name": "dz6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4055386",
+		"_collection_link": "https://www.postman.com/muvarov232/workspace/dz3/collection/4055386-ca5fde82-de7a-4838-a944-2b9f56d4e50b?action=share&source=collection_link&creator=4055386"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":  \"maxim23\",\n    \"lastName\": \"myLastName2\",\n    \"email\": \"email@email.com\",\n    \"username\": \"dubec26\",\n    \"password\": \"pwd2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arch.homework/users/register",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create order",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "dubec26",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Request-Id",
+						"value": "234234-asdfasdf-23423425",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":  1,\n    \"goods\": \"milk\",\n    \"amount\": 55,\n    \"quantity\": 123\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arch.homework/orders",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create order race",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "dubec26",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "pwd2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Request-Id",
+						"value": "234234-asdfasdf-23423425",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":  1,\n    \"goods\": \"milk\",\n    \"amount\": 55,\n    \"quantity\": 123\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arch.homework/orders",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
